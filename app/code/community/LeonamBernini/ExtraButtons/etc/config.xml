@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <LeonamBernini_ExtraButtons>
+            <version>2.0.1</version>
+        </LeonamBernini_ExtraButtons>
+    </modules>
+    
+    <frontend>
+        <routers>
+            <extrabuttons>
+                <use>standard</use>
+                <args>
+                    <frontName>extrabuttons</frontName>
+                    <module>LeonamBernini_ExtraButtons</module>
+                </args>
+            </extrabuttons>
+        </routers>
+        <layout>
+            <updates>
+                <extrabuttons>
+                    <file>leonambernini/extrabuttons.xml</file>
+                </extrabuttons>
+            </updates>
+        </layout>
+        
+        <translate>
+            <modules>
+                <LeonamBernini_ExtraButtons>
+                    <files>
+                        <default>LeonamBernini_ExtraButtons.csv</default>
+                    </files>
+                </LeonamBernini_ExtraButtons>
+            </modules>
+        </translate>
+    </frontend>
+    
+    <global>
+        <blocks>
+            <extrabuttons>
+                <class>LeonamBernini_ExtraButtons_Block</class>
+            </extrabuttons>
+        </blocks>
+        
+        <helpers>
+            <extrabuttons>
+                <class>LeonamBernini_ExtraButtons_Helper</class>
+            </extrabuttons>
+        </helpers>
+        
+        <models>
+            <extrabuttons>
+                <class>LeonamBernini_ExtraButtons_Model</class>
+                <resourceModel>extrabuttons_mysql4</resourceModel>
+            </extrabuttons>
+            <extrabuttons_mysql4>
+                <class>LeonamBernini_ExtraButtons_Model_Mysql4</class>
+                <entities>
+                    <extrabuttons>
+                        <table>lb_extrabuttons</table>
+                    </extrabuttons>
+                </entities>
+            </extrabuttons_mysql4>
+        </models>
+    </global>
+    
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <extrabuttons>
+                                            <title>ExtraButtons Settings - NEX</title>
+                                        </extrabuttons>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        
+        <translate>
+            <modules>
+                <LeonamBernini_ExtraButtons>
+                    <files>
+                        <default>LeonamBernini_ExtraButtons.csv</default>
+                    </files>
+                </LeonamBernini_ExtraButtons>
+            </modules>
+        </translate>
+    </adminhtml>
+    
+    <admin>
+        <routers>
+            <extrabuttons>
+                <use>admin</use>
+                <args>
+                    <module>LeonamBernini_ExtraButtons</module>
+                    <frontName>extrabuttons</frontName>
+                </args>
+            </extrabuttons>
+        </routers>
+    </admin>
+    
+    <default>
+        <extrabuttons>
+            <general>
+                <enabled>1</enabled>
+            </general>
+        </extrabuttons>
+    </default>
+    
+</config>

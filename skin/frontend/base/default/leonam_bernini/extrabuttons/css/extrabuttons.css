@@ -1,0 +1,15 @@
+/* 
+    Created on : 06/11/2014, 04:35:27
+    Author     : Leonam Bernini (leonamb19@gmail.com)
+*/
+
+.extra-buttons{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.extra-buttons{ display: block; padding: 20px 0; }
+.extra-buttons-item{ display: block; padding: 2px 0; opacity: .6; filter: alpha(opacity=60); }
+.extra-buttons-item:hover{ opacity: 1; filter: alpha(opacity=100); }
+.extra-buttons-image{ display: block; max-width: 100%; }

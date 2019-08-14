@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>leonam_bernini/extrabuttons/css/extrabuttons.css</stylesheet>
+            </action>
+        </reference>
+    </default>
+    <catalog_product_view>
+        <reference name="product.info">         
+            <block type="extrabuttons/extrabuttons" name="leonambernini.extrabuttons" as="leonambernini.extrabuttons" template="leonambernini/extrabuttons/extrabuttons.phtml"/>      
+        </reference>
+        <reference name="product.info.media">         
+            <block type="extrabuttons/extrabuttons" name="leonambernini.extrabuttons" as="leonambernini.extrabuttons" template="leonambernini/extrabuttons/extrabuttons.phtml"/>      
+        </reference>
+    </catalog_product_view>
+    <catalog_category_default>
+        <reference name="product_list">
+            <block type="extrabuttons/extrabuttons" name="leonambernini.extrabuttons" as="leonambernini.extrabuttons" template="leonambernini/extrabuttons/extrabuttons.phtml"/>
+        </reference>
+    </catalog_category_default>
+</layout>

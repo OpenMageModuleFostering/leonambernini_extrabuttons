@@ -1,0 +1,21 @@
+<?php $_product = $this->getProduct(); ?>
+<?php $_buttons = $this->getButtons(); ?>
+<?php if( Mage::getStoreConfig("extrabuttons/general/enabled") && $_buttons != false ): ?>
+<span class="extra-buttons">
+<?php $i = 0; $img = null; ?>
+<?php foreach ( $_buttons as $button ): ?>
+    <?php if( ( $button->getAttributeKey() != 'unavailable' && $_product->getData( $button->getAttributeKey() ) ) || ( $button->getAttributeKey() == 'unavailable' && !$_product->getStockItem()->getIsInStock() ) ) : ?>
+    <span class="extra-buttons-item item-<?php echo $i++; ?> <?php echo $button->getAttributeKey() ?>">
+        <?php $img   = $button->getFilename(); ?>
+        <?php $title = $button->getTitle() ?>
+        <?php if( isset( $img ) && trim( $img ) != '' && $img != null ): ?>
+        <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . $img ?>" title="<?php echo $title ?>" alt="<?php echo $title ?>" class="extra-buttons-image" />
+        <?php else: ?>
+        <span class="extra-buttons-title" title="<?php echo $title ?>"><?php echo $title ?></span>
+        <?php endif; ?>
+    </span>
+    <?php endif; ?>
+<?php endforeach; ?>
+    
+</span><!-- .extra-buttons -->
+<?php endif; ?>

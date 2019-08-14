@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>LeonamBernini_ExtraButtons</name>
+    <version>2.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/mit-license.php">MIT License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Extra Button extension for magento</summary>
+    <description>Now it's very easy to display extra buttons like free shipping, highlight, and unavailable for product launch and more...</description>
+    <notes>This version was changed almost everything is now possible to create buttons as needed, recorded in the database.</notes>
+    <authors><author><name>Leonam Bernini</name><user>leonambernini</user><email>leonam.b@hotmail.com</email></author></authors>
+    <date>2014-11-11</date>
+    <time>02:29:01</time>
+    <contents><target name="magecommunity"><dir name="LeonamBernini"><dir name="ExtraButtons"><dir name="Block"><dir name="Adminhtml"><dir name="Extrabuttons"><dir name="Edit"><file name="Form.php" hash="c6d1a061c5065fb8c081d2aa674256e4"/><dir name="Tab"><file name="Form.php" hash="a48af4ab17c48ba8316c79fa1ce84239"/></dir><file name="Tabs.php" hash="723fea47f7721f4cd3ee4152fecf554c"/></dir><file name="Edit.php" hash="3f52fe879a6fa56a98f0fcad5786405b"/><file name="Grid.php" hash="90dc5c56bd4107f96177b37d8ccdeb0b"/></dir><file name="Extrabuttons.php" hash="e504f79fdf0fa391e2e70de68815d4a9"/><dir name="Grid"><dir name="Renderer"><file name="Image.php" hash="09f55bf59daf781bcba496d692f1e422"/></dir></dir></dir><file name="Extrabuttons.php" hash="c6c6bc1f8c670b34d9d0fe6af0349c7c"/></dir><dir name="Helper"><file name="Data.php" hash="96667166db3744f48b3348be6c8c8084"/></dir><dir name="Model"><file name="Extrabuttons.php" hash="be5532eee65913e07eb517925d3cfabe"/><dir name="Mysql4"><dir name="Extrabuttons"><file name="Collection.php" hash="c39c1b7e617ec87ab60d53b2fdc09cb4"/></dir><file name="Extrabuttons.php" hash="51754c0aaff209cd4657cd37ac0a037b"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="IndexController.php" hash="ab1609ba4cc6966df38b46fc37e1e3b3"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="76fd5752d5660263680dfd242af77571"/><file name="config.xml" hash="85acffb7a12d9d8654107f4f2e1696f9"/><file name="system.xml" hash="0c5faa9724f7233f8e6d376dae414bfa"/></dir><dir name="sql"><dir name="extrabuttons_setup"><file name="mysql4-install-2.0.1.php" hash="7e3398df88981df55d085abb2410cfd0"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="leonambernini"><file name="extrabuttons.xml" hash="f71a4a10b05ad982fea38d174f66a7e3"/></dir></dir><dir name="template"><dir name="leonambernini"><dir name="extrabuttons"><file name="extrabuttons.phtml" hash="7ab8714047fa27279e269d11084a34d5"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="LeonamBernini_ExtraButtons.xml" hash="934dd937e5dcc0d2a74d935010b640bf"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="leonam_bernini"><dir name="extrabuttons"><dir name="css"><file name="extrabuttons.css" hash="9529b099efe3d760824e69e4b0b0e61d"/></dir></dir></dir></dir></dir></dir></target><target name="magelocale"><dir><dir name="en_US"><file name="LeonamBernini_ExtraButtons.csv" hash="f450c2008273491fb8f0bee543321b73"/></dir><dir name="pt_BR"><file name="LeonamBernini_ExtraButtons.csv" hash="f9853e4002d99447ed80ce7a1ea32a8e"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

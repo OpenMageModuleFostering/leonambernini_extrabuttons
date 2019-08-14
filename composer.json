@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/LeonamBernini_ExtraButtons",
+    "type": "magento-module",
+    "license": "MIT-License",
+    "homepage": "",
+    "description": "Extra Button extension for magento",
+    "authors": [
+    {
+        "name": "Leonam Bernini",
+        "email": "leonam.b@hotmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

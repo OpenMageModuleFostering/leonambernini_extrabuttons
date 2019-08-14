@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+ * @category    LeonamBernini
+ * @package     LeonamBernini_ExtraButtons
+ * @copyright   Copyright (c) 2014 Leonam Bernini. (http://www.agencianex.com.br)
+ */
+-->
+<config>
+    <modules>
+        <LeonamBernini_ExtraButtons>
+            <active>true</active>
+            <codePool>community</codePool>
+        </LeonamBernini_ExtraButtons>
+    </modules>
+</config>
